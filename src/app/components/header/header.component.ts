@@ -9,6 +9,7 @@ import { logoUrl, iconLinks } from './header.model';
 export class HeaderComponent implements OnInit {
 
   public iconLinks = iconLinks;
+  public logoUrl = logoUrl;
 
   constructor() { }
 
