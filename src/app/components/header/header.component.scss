@@ -1,12 +1,12 @@
-#header-main {
+#header-toolbar {
+    height: auto;
+    background-color: transparent;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
     padding: 20px 10px;
-    background-color: transparent;
-    // color: #64ffda;
     color: #8eaebd;
     width: 100vw;
 }
@@ -46,7 +46,4 @@ a:active {
 
 .header-link {
     padding: 10px;
-}
-.header-link:hover {
-    text-decoration: underline;
 }

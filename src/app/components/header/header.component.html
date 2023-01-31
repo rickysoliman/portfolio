@@ -1,17 +1,14 @@
-<mat-toolbar role="heading">
-    <div id="header-main">
-        <img id="header-logo" src="{{ logoUrl }}" alt="headshot" />
-        <div id="header-title-wrapper">
-            <h1 id="header-title">Ricky Marasigan</h1>
-            <h3 id="header-subtitle">Frontend Software Engineer</h3>
-        </div>
-        <div id="header-links">
-            <span class="header-link" *ngFor="let icon of iconLinks">
-                <a [href]="icon.url" target=”_blank”>
-                    {{ icon.icon }}
-                </a>
-            </span>
-        </div>
-        <i class="fab fa-github"></i>
+<mat-toolbar role="heading" id="header-toolbar">
+    <img id="header-logo" src="{{ logoUrl }}" alt="headshot" />
+    <div id="header-title-wrapper">
+        <h1 id="header-title">Ricky Marasigan</h1>
+        <h3 id="header-subtitle">Frontend Software Engineer</h3>
+    </div>
+    <div id="header-links">
+        <span class="header-link" *ngFor="let icon of iconLinks">
+            <a [href]="icon.url" target=”_blank”>
+                <i [class]="icon.class"></i>
+            </a>
+        </span>
     </div>
 </mat-toolbar>
