@@ -6,12 +6,13 @@
     overflow: hidden;
     padding: 20px 10px;
     background-color: transparent;
-    color: #64ffda;
+    // color: #64ffda;
+    color: #8eaebd;
     width: 100vw;
 }
 
 #header-title-wrapper {
-    color: #64ffda;
+    color: #8eaebd;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -28,13 +29,13 @@
 }
 
 a:link {
-    color: #64ffda;
+    color: #8eaebd;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: #64ffda;
+    color: #8eaebd;
     background-color: transparent;
     text-decoration: none;
 }
