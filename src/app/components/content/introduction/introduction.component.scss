@@ -1,0 +1,29 @@
+#intro-wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+}
+
+#intro-text {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    width: 275px;
+    // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#intro-headshot-frame {
+    // border: 1px solid white;
+    border-radius: 5%;
+    offset-position: 25%;
+    margin-left: 10px;
+}
+
+#intro-headshot {
+    width: 275px;
+    border-radius: 5%;
+}
