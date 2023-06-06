@@ -1,26 +1,38 @@
+/* Body */
 body {
-    background-image:
-        linear-gradient(
-            #0a0849, black
-        );
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 100%;
-    background-attachment: fixed;
-    margin: 0;
-    // font-family: Roboto, "Helvetica Neue", sans-serif;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+  background-image:
+      linear-gradient(
+          #7e9287, black
+      );
+  color: #333333;
 }
+
+/* Headings */
+h1, h2, h3 {
+  color: #222222;
+}
+
+h4, h5, h6 {
+  color: #555555;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+}
+
+a:visited {
+  color: #7558EF;
+}
+
+/* Buttons */
+.button {
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
- 
-// @import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
-
-// blue: #0a0849
-// green: #04350c
