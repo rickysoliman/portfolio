@@ -3,11 +3,12 @@
       <img id="header-logo" src="assets/logo.png" alt="headshot" />
     </div>
     <div id="header-icon-links">
-        <a
-          *ngFor="let link of iconLinks"
-          [href]="link.url"
-          [class]="link.class + ' icon-link'"
-          target="_blank"
-        ></a>
+          <a
+            *ngFor="let link of iconLinks"
+            [href]="link.url"
+            [class]="link.class + ' icon-link'"
+            target="_blank"
+          ></a>
+        <a class="contact icon-link" href="mailto:rickysoliman@gmail.com" target="_blank">Contact</a>
     </div>
 </mat-toolbar>

@@ -3,8 +3,7 @@
     background-color: transparent;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     padding: 20px 10px;
     color: white;
@@ -24,8 +23,8 @@
 }
 
 .logo-wrapper {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #header-logo {
@@ -39,18 +38,22 @@
 }
 
 a.icon-link {
-  color: #b6d705;
-  font-size: 30px;
-  text-decoration: none;
-  padding: 0 10px;
+    color: #b6d705;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
 a.icon-link:hover {
-  color: #a5be04;
-  transition: color 0.3s ease;
+    color: #a5be04;
+    transition: color 0.3s ease;
 }
 
 a.icon-link:active {
-  color: #b6d705;
+    color: #b6d705;
 }
 
+.contact {
+    border: 2px solid b6d705;
+    border-radius: 5px;
+}
