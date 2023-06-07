@@ -1,6 +1,10 @@
-<div id="intro-wrapper">
-    <div id="intro-text">
-        <h1>{{ introText.header }}</h1>
-        <p>{{ introText.paragraph }}</p>
+<ng-template #introduction>
+    <div id="intro-wrapper">
+        <div id="intro-text">
+            <div id="intro-header">{{ introText.header }}</div>
+            <p id="intro-paragraph">{{ introText.paragraph }}</p>
+        </div>
     </div>
-</div>
+</ng-template>
+
+<app-content-card [contentTemplate]="introduction"></app-content-card>

@@ -1,0 +1,38 @@
+.content-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: fit-content !important;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 4px solid #1a1a1a;
+    box-shadow: 5px 5px 20px #000000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+}
+.content-card:hover {
+    background-color: #497135;
+    border: 4px solid #1a1a1a;
+    box-shadow: 5px 5px 20px #000000;
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+.content-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/markus-spiske-KDBWMSq9wh0-unsplash.jpg');
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.content-card:hover::before {
+    opacity: 0.1; /* Show the code snippet on hover */
+}
