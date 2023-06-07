@@ -1,28 +1,22 @@
 /* Body */
 body {
   background-image:
-      linear-gradient(
-          #7e9287, black
-      );
-  color: #333333;
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: #222222;
-}
-
-h4, h5, h6 {
-  color: #555555;
+    linear-gradient(#839114,#100a5ca1), url('../src/assets/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #f8f8f8;
 }
 
 /* Links */
 a {
-  color: #007BFF;
+  color: #14cc2f;
 }
-
+a:hover {
+  text-decoration: underline;
+}
 a:visited {
-  color: #7558EF;
+  color: #0f9936;
 }
 
 /* Buttons */

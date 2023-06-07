@@ -24,6 +24,7 @@ import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { IntroductionComponent } from './components/content/introduction/introduction.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { IntroductionComponent } from './components/content/introduction/introdu
     MdbScrollspyModule,
     MdbTabsModule,
     MdbTooltipModule,
-    MdbValidationModule
+    MdbValidationModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
