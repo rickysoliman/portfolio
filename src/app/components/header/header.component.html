@@ -2,11 +2,12 @@
     <div class="logo-wrapper">
       <img id="header-logo" src="assets/logo.png" alt="headshot" />
     </div>
-    <div id="header-links">
-        <span class="header-link" *ngFor="let icon of iconLinks">
-            <a [href]="icon.url" target=”_blank”>
-                <i [class]="icon.class"></i>
-            </a>
-        </span>
+    <div id="header-icon-links">
+        <a
+          *ngFor="let link of iconLinks"
+          [href]="link.url"
+          [class]="link.class + ' icon-link'"
+          target="_blank"
+        ></a>
     </div>
 </mat-toolbar>

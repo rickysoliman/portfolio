@@ -8,7 +8,6 @@
     overflow: hidden;
     padding: 20px 10px;
     color: white;
-    width: 100vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -35,31 +34,23 @@
     height: auto;
 }
 
-#header-links {
-    padding-right: 50px;
+#header-icon-links {
     text-align: center;
 }
 
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+a.icon-link {
+  color: #b6d705;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
-a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+a.icon-link:hover {
+  color: #a5be04;
+  transition: color 0.3s ease;
 }
 
-a:active {
-    // color: rgb(196, 128, 128);
-    color: grey;
+a.icon-link:active {
+  color: #b6d705;
 }
 
-.header-link {
-    padding: 10px;
-}
-.header-link:hover {
-    color: green;
-}
