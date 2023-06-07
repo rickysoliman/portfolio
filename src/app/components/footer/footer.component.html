@@ -1,4 +1,19 @@
-<div id="footer-main">
-    <img id="footer-logo" src="assets/logo.png"/>
+<footer id="footer-main">
+  <div class="footer-content">
+    <img id="footer-logo" src="assets/logo.png" alt="Logo"/>
     <a href="mailto:rickysoliman@gmail.com">rickysoliman@gmail.com</a>
-</div>
+  </div>
+  <div class="footer-links">
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <a
+      *ngFor="let link of iconLinks"
+      [href]="link.url"
+      [class]="link.class + ' footer-icon-link'"
+      target="_blank"
+    ></a>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2023 rickymarasigan.com All rights reserved.
+  </div>
+</footer>
