@@ -26,6 +26,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { IntroductionComponent } from './components/content/introduction/introduction.component';
 import { MatButtonModule } from '@angular/material/button';
+import { ProjectComponent } from './components/content/project/project.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { MatButtonModule } from '@angular/material/button';
     FooterComponent,
     IntroductionComponent,
     ContentCardComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
