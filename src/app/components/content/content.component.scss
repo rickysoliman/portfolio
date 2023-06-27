@@ -7,6 +7,15 @@
     flex-direction: column;
 }
 
+.projects-header {
+    color: white;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
 .temp {
     width: 100vw;
     height: 50vh;
