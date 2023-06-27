@@ -5,11 +5,10 @@
         <app-project
           [name]="project.name"
           [description]="project.description"
-          [url]="project.url"
           [gifPath]="project.gifPath"
         ></app-project>
       </ng-template>
 
-      <app-content-card [contentTemplate]="projectTpl"></app-content-card>
+      <app-content-card [url]="project.url" [contentTemplate]="projectTpl"></app-content-card>
     </div>
 </div>

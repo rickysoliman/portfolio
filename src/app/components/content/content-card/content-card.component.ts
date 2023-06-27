@@ -6,6 +6,7 @@ import { Component, Input, OnInit, TemplateRef } from '@angular/core';
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent implements OnInit {
+  @Input() url: string = '';
   @Input() contentTemplate: TemplateRef<any> = null!;
 
   constructor() { }
