@@ -14,7 +14,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Dall-E Clone',
-    description: `This is my own take on the UI of the official DALL-E website. Built in React, this app enables users to input text prompts and call upon the DALL-E Image Generation API to generate and display one or multiple images based on the given prompt.`,
+    description: `A re-imagining of OpenAI's DALL-E Image Generation app. Just describe anything you can think of in your wildest dreams, and click Generate. This React based app will utilize OpenAI's Image Generation API to bring your imagination to life!`,
     url: 'https://rickysoliman.github.io/simple-dall-e-clone/',
     gifPath: '../../../assets/dalle.gif',
   }
