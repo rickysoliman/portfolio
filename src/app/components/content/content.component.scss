@@ -7,13 +7,64 @@
     flex-direction: column;
 }
 
-.projects-header {
+.content-header {
     color: white;
     padding-top: 50px;
     font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 7px 6px 5px rgb(0 0 0);
 }
+
+.work-experience {
+    width: 75%;
+}
+
+.work-experience-wrapper {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.work-experience-header {
+    display: flex;
+    flex-direction: column;
+    flex-direction: start;
+    margin-bottom: 10px;
+}
+
+.work-experience-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.work-experience-company {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.work-experience-date {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.work-experience-title {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.work-experience-description {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
 
 .temp {
     width: 100vw;

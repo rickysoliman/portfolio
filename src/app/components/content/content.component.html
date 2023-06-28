@@ -1,6 +1,7 @@
 <div class="content-wrapper">
     <app-introduction></app-introduction>
-    <h1 class="projects-header">PROJECTS</h1>
+
+    <h1 class="content-header">PROJECTS</h1>
     <div class="projects" *ngFor="let project of projects">
       <ng-template #projectTpl>
         <app-project
@@ -11,5 +12,18 @@
       </ng-template>
 
       <app-content-card [url]="project.url" [contentTemplate]="projectTpl"></app-content-card>
+    </div>
+
+    <h1 class="content-header">WORK EXPERIENCE</h1>
+    <div class="work-experience" *ngFor="let work of workExperience">
+      <div class="work-experience-wrapper">
+        <div class="work-experience-header">
+          <img class="work-experience-logo" [src]="work.logoPath">
+          <h2 class="work-experience-company">{{ work.company }}</h2>
+          <p class="work-experience-date">{{ work.date }}</p>
+        </div>
+        <h3 class="work-experience-title">{{ work.title }}</h3>
+        <p class="work-experience-description">{{ work.description }}</p>
+      </div>
     </div>
 </div>

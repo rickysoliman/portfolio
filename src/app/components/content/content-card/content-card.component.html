@@ -1,3 +1,7 @@
-<a class="content-card" [href]="url" target="_blank">
-    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+<a *ngIf="url" class="content-card" [href]="url" target="_blank">
+  <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
 </a>
+
+<div *ngIf="!url" class="content-card">
+  <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+</div>

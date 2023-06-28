@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { projects } from './projects.model';
-
+import { projects, workExperience } from './experience.model';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -8,6 +7,7 @@ import { projects } from './projects.model';
 })
 export class ContentComponent implements OnInit {
   projects = projects;
+  workExperience = workExperience;
 
   constructor() { }
 
