@@ -2,12 +2,13 @@
 body {
   background-image: url('../src/assets/vlad-hilitanu-pt7QzB4ZLWw-unsplash.jpg');
   background-repeat: no-repeat;
-  background-size: inherit; /* Use 100% width and 100% height */
-  background-position: fixed; /* Fixed position to prevent scrolling */
   color: #f8f8f8;
   height: 100vh;
   overflow-x: hidden;
   margin: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Make the background image fixed */
 }
 
 /* Links */
