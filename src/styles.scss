@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #a4bc03, #abb63f, #a4bc59, #acc254);
+    background: linear-gradient(-45deg, #0057b5, #004b9b, #003f81, #601b4d, #c01313, #daa36f, #b1cb03, #8fa902, #5c7e00, #476100);
     background-repeat: no-repeat;
     color: #f8f8f8;
     height: 100vh;
@@ -13,8 +13,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    background-size: 500% 500%;
+    animation: gradient 120s ease infinite;
 }
 
 @keyframes gradient {

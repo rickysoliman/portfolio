@@ -2,6 +2,9 @@
     <div [class.fade-in]="true">
       <app-introduction></app-introduction>
     </div>
+    <div class="emoji-container">
+      <span class="emoji">👇</span>
+    </div>
 
     <h1 class="content-header" [class.fade-in]="true">PROJECTS</h1>
     <div class="projects" *ngFor="let project of projects">
@@ -28,5 +31,14 @@
         <h3 class="work-experience-title">{{ work.title }}</h3>
         <p class="work-experience-description">{{ work.description }}</p>
       </div>
+    </div>
+
+    <div class="conclusion" [class.fadeIn]="true">
+      <p>
+        Thanks for exploring my portfolio! I'm always pursuing new projects so make sure to stay tuned for exciting updates! If you're looking for a developer to work with you on your next endeavor, feel free to get in touch!
+      </p>
+      <a class="contact-button" href="mailto:rickysoliman@gmail.com" target="_blank">
+        <button class="custom-button">Contact</button>
+      </a>
     </div>
 </div>
