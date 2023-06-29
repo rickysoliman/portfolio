@@ -38,7 +38,7 @@
     opacity: 0.1; /* Show the code snippet on hover */
 }
 #intro-wrapper:hover #intro-text {
-    transform: translateX(50px); /* Move the text to the right */
+    transform: translateX(100px); /* Move the text to the right */
 }
 
 #intro-header {
@@ -107,5 +107,16 @@
 
     .headshot {
         border-radius: 5px;
+    }
+
+    /* Disable hover styles */
+    #intro-wrapper:hover,
+    #intro-wrapper:hover::before,
+    #intro-wrapper:hover #intro-text,
+    #intro-wrapper:hover .headshot-wrapper {
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+        transform: none;
     }
 }
