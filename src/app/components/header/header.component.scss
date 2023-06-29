@@ -39,22 +39,15 @@ h1 {
 }
 
 a.icon-link {
-    color: #007829;
+    color: #00d34a;
     font-size: 30px;
     text-decoration: none;
     padding: 0 10px;
 }
-
 a.icon-link:hover {
-    color: #009f36;
+    color: #cef200;
     transition: color 0.3s ease;
 }
-
 a.icon-link:active {
-    color: #04c042;
-}
-
-.contact {
-    border: 2px solid b6d705;
-    border-radius: 5px;
+    color: #ffff00;
 }

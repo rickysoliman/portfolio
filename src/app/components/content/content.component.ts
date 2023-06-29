@@ -25,7 +25,7 @@ export class ContentComponent implements AfterViewInit {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 1, // Adjust this value to control when the fading occurs
+      threshold: 0.75, // Adjust this value to control when the fading occurs
     };
 
     const observer = new IntersectionObserver((entries) => {
