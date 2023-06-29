@@ -1,9 +1,21 @@
 .project-wrapper {
-  text-align: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.project-name {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .project-gif {
   display: block;
-  margin: 0 auto;
-  padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+  width: 100%;
+}
+
+.project-description {
+    font-size: 16px;
+    margin-top: 10px;
 }
