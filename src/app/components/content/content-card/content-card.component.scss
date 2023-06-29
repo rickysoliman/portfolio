@@ -22,3 +22,26 @@
     box-shadow: 5px 5px 20px #000000;
     transform: scale(1.02);
 }
+
+@media (max-width: 767px) {
+    .content-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        font-size: 2.5em;
+        border: none;
+        box-shadow: none;
+        transform: none;
+        margin: 10px 0;
+    }
+
+    .content-card:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
+
