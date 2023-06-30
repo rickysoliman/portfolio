@@ -58,14 +58,12 @@
 
 .headshot-wrapper {
     position: absolute;
-    top: 0;
     left: 0;
-    width: 140px;
-    height: 160px;
+    width: 220px;
+    height: 262px;
     padding: 50px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    margin-left: 30px; /* Add some margin for spacing */
 }
 
 #intro-wrapper:hover .headshot-wrapper {
@@ -92,7 +90,7 @@
 
     #intro-text {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
     }
 
