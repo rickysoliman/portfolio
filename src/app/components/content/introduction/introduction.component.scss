@@ -1,22 +1,20 @@
 #intro-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 65vw;
-    height: 200px;
+    width: 80vw;
+    height: 250px;
     background-color: transparent;
     border-radius: 10px;
-    padding: 30px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     transition: background-color 0.75s ease, transform 0.75s ease;
     border: 4px solid transparent;
-    box-shadow: 5px 5px 20px #000000;
+    box-shadow: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
     margin: 125px 0px 100px 0;
-    flex-direction: row-reverse; /* Reverse the order of flex items */
-    align-items: center; /* Center vertically */
+    flex-direction: row-reverse;
+    align-items: center;
 }
 #intro-wrapper:hover {
     background-color: black;
