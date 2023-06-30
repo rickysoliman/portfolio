@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 1.5em;
+    margin-bottom: 100px;
 }
 
 .emoji {
@@ -174,6 +175,14 @@
         font-size: 1.5rem;
         padding: 18px 40px;
     }
+
+    // .content-header {
+    //     color: white;
+    //     padding: 150px 0;
+    //     font-size: 2.25rem;
+    //     font-weight: bold;
+    //     text-shadow: 7px 6px 5px rgb(0 0 0);
+    // }
 
     .temp {
         height: 30vh;

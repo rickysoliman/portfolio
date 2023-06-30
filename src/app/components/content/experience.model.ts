@@ -45,6 +45,6 @@ export const workExperience: WorkExperience[] = [
     description: `
       I’ve been enjoying doing volunteer work for the Disaster Accountability Project very much by contributing to the revamping of their website. I've built several Angular components, including a re-usable and dynamic text input component, and a slick hamburger icon drop-down menu. With a keen eye for quality, I crafted solid unit tests using Jest and conducted thorough end-to-end tests using Cypress. Throughout the process, I also actively participated in code reviews, offering constructive feedback and fostering a friendly and collaborative team environment.
     `,
-    logoPath: '../../../assets/dap-logo.jpeg',
+    logoPath: '../../../assets/dap-logo.jpg',
   },
 ];

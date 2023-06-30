@@ -1,4 +1,4 @@
-import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { projects, workExperience } from './experience.model';
 @Component({
@@ -16,8 +16,14 @@ import { projects, workExperience } from './experience.model';
 export class ContentComponent implements AfterViewInit {
   projects = projects;
   workExperience = workExperience;
+  isAnimationEnabled: boolean = window.innerWidth > 767;
 
   constructor(private elementRef: ElementRef) {}
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.isAnimationEnabled = window.innerWidth > 767;
+  }
 
   ngAfterViewInit() {
     const elements = this.elementRef.nativeElement.querySelectorAll('.fade-in');
@@ -40,5 +46,4 @@ export class ContentComponent implements AfterViewInit {
       observer.observe(element);
     });
   }
-
 }

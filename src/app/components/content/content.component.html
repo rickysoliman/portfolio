@@ -1,27 +1,27 @@
 <div class="content-wrapper">
-    <div [class.fade-in]="true">
+    <div class="fade-in">
       <app-introduction></app-introduction>
     </div>
     <div class="emoji-container">
       <span class="emoji">👇</span>
     </div>
 
-    <h1 class="content-header" [class.fade-in]="true">PROJECTS</h1>
+    <h1 [className]="'content-header' + (isAnimationEnabled ? ' fade-in' : '')">PROJECTS</h1>
     <div class="projects" *ngFor="let project of projects">
       <ng-template #projectTpl>
         <app-project
-          [class.fade-in]="true"
+          [class.fade-in]="isAnimationEnabled"
           [name]="project.name"
           [description]="project.description"
           [gifPath]="project.gifPath"
         ></app-project>
       </ng-template>
 
-      <app-content-card [url]="project.url" [contentTemplate]="projectTpl" [class.fade-in]="true"></app-content-card>
+      <app-content-card [url]="project.url" [contentTemplate]="projectTpl" [className]="isAnimationEnabled ? 'fade-in' : ''"></app-content-card>
     </div>
 
-    <h1 class="content-header" [class.fade-in]="true">WORK EXPERIENCE</h1>
-    <div class="work-experience" *ngFor="let work of workExperience" [class.fade-in]="true">
+    <h1 [className]="'content-header' + (isAnimationEnabled ? ' fade-in' : '')">WORK EXPERIENCE</h1>
+    <div class="work-experience" *ngFor="let work of workExperience" [className]="isAnimationEnabled ? 'fade-in' : ''">
       <div class="work-experience-wrapper">
         <div class="work-experience-header">
           <img class="work-experience-logo" [src]="work.logoPath">
