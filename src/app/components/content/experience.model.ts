@@ -47,4 +47,13 @@ export const workExperience: WorkExperience[] = [
     `,
     logoPath: '../../../assets/dap-logo.jpg',
   },
+  {
+    company: 'All for the Family Legal Clinic, Inc.',
+    title: 'Frontend Software Engineer',
+    date: 'February 2021 - April 2021',
+    description: `
+      At All for the Family Legal Clinic, I was tasked with rebuilding their website from the ground up. I designed and built their website using React and also incorporated the Google Maps API for their map feature, Nodemailer for client service inquiries, and the PayPal API for their donations feature.
+    `,
+    logoPath: '../../../assets/all-for-the-family.jpg',
+  },
 ];
