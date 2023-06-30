@@ -1,7 +1,6 @@
-<a *ngIf="url" class="content-card" [href]="url" target="_blank">
+<div class="content-card">
   <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-</a>
-
-<div *ngIf="!url" class="content-card">
-  <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+  <a *ngIf="url" [href]="url" target="_blank">
+    <button class="click">Click to see it for yourself</button>
+  </a>
 </div>

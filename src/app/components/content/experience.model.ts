@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     name: 'DALL·E Clone',
     description: `A re-imagining of OpenAI's DALL·E Image Generation app. Just describe anything you can think of in your wildest dreams, and click Generate. This React based app will utilize OpenAI's Image Generation API to bring your imagination to life!`,
-    url: 'https://rickysoliman.github.io/simple-dall-e-clone/',
+    url: '',
     gifPath: '../../../assets/dalle.gif',
   }
 ];
