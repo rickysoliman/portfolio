@@ -105,6 +105,14 @@
         border-radius: 5px;
     }
 
+    #intro-wrapper:hover::before {
+        opacity: 0; /* Hide the image on hover */
+    }
+
+    #intro-wrapper::before {
+        display: none; /* Hide the image */
+    }
+
     /* Disable hover styles */
     #intro-wrapper:hover,
     #intro-wrapper:hover::before,
@@ -114,5 +122,6 @@
         box-shadow: none;
         opacity: 1;
         transform: none;
+        background-image: none;
     }
 }
