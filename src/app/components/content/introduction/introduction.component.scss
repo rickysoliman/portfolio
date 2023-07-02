@@ -1,7 +1,7 @@
 .intro-wrapper {
     display: flex;
-    justify-content: center;
-    width: 80vw;
+    justify-content: space-evenly;
+    width: 90vw;
     height: 348px;
     background-color: transparent;
     border-radius: 10px;
@@ -15,6 +15,7 @@
     margin: 31px 0px 31px 0;
     flex-direction: row-reverse;
     align-items: center;
+    flex-wrap: wrap;
 }
 .intro-wrapper:hover {
     background-color: black;
@@ -50,8 +51,9 @@
     flex-direction: column;
     justify-content: center;
     width: 65%;
+    max-width: 300px;
     font-size: 1.15rem;
-    transition: transform 0.3s ease; /* Add transition for transform property */
+    transition: transform 0.3s ease;
 }
 
 .headshot-wrapper {
@@ -59,7 +61,7 @@
     left: 0;
     width: 390px;
     height: 410px;
-    padding: 50px;
+    padding: 50px 50px 50px 100px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -74,6 +76,7 @@
     object-fit: cover;
     border-radius: 7px;
     opacity: 1;
+    max-width: 100%;
 }
 
 .technical-skills-wrapper {
@@ -98,12 +101,6 @@
     margin: 0 5px;
     padding: 8px 12px;
     text-align: center;
-    text-shadow: none;
-    transition: text-shadow 0.3s ease;
-}
-
-.skill:hover {
-    text-shadow: 2px 4px 7px black;
 }
 
 @media (max-width: 767px) {

@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     background-size: 500% 500%;
     animation: gradient 120s ease infinite;
+    text-shadow: 3px 3px 7px rgb(99, 99, 99);
 }
 
 @keyframes gradient {

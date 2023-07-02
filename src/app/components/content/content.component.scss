@@ -34,10 +34,10 @@
 
 .content-header {
     color: white;
-    padding: 150px 0;
+    padding: 50px 0;
     font-size: 2.5rem;
     font-weight: bold;
-    text-shadow: 7px 6px 5px rgb(0 0 0);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .work-experience {
@@ -50,6 +50,7 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    text-shadow: none;
 }
 
 .work-experience-header {
@@ -175,14 +176,6 @@
         font-size: 1.5rem;
         padding: 18px 40px;
     }
-
-    // .content-header {
-    //     color: white;
-    //     padding: 150px 0;
-    //     font-size: 2.25rem;
-    //     font-weight: bold;
-    //     text-shadow: 7px 6px 5px rgb(0 0 0);
-    // }
 
     .temp {
         height: 30vh;
