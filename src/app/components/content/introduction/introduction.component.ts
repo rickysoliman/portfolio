@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { introText } from './introduction.component.constants';
+import { introText, technicalSkills } from './introduction.component.constants';
 
 @Component({
   selector: 'app-introduction',
@@ -8,7 +8,8 @@ import { introText } from './introduction.component.constants';
 })
 export class IntroductionComponent implements OnInit {
 
-  public introText = introText;
+  introText = introText;
+  technicalSkills = technicalSkills;
 
   constructor() { }
 

@@ -1,9 +1,15 @@
-<div id="intro-wrapper">
+<div class="intro-wrapper">
   <div class="headshot-wrapper">
     <img class="headshot" src="../../../../assets/ricky-and-mickie.jpg">
   </div>
-  <div id="intro-text">
-      <div id="intro-header">{{ introText.header }}</div>
-      <p id="intro-paragraph">{{ introText.paragraph }}</p>
+  <div class="intro-text">
+      <div class="intro-header">{{ introText.header }}</div>
+      <p class="intro-paragraph">{{ introText.paragraph }}</p>
   </div>
+</div>
+<div class="technical-skills-wrapper">
+  <div class="intro-header">TECHNICAL SKILLS</div>
+  <ul class="technical-skills">
+    <li *ngFor="let skill of technicalSkills" class="skill">{{ skill }}</li>
+  </ul>
 </div>
