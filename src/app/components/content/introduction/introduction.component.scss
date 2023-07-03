@@ -1,5 +1,7 @@
 .intro-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     width: 90vw;
     height: 348px;
@@ -12,32 +14,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
-    margin: 31px 0px 31px 0;
-    flex-direction: row-reverse;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.intro-wrapper:hover {
-    background-color: black;
-    box-shadow: 5px 5px 20px #000000;
-    opacity: 0.9;
-}
-.intro-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../../../assets/markus-spiske-KDBWMSq9wh0-unsplash.jpg');
-    opacity: 0;
-    transition: opacity 0.75s ease;
-}
-.intro-wrapper:hover::before {
-    opacity: 0.1; /* Show the code snippet on hover */
-}
-.intro-wrapper:hover .intro-text {
-    transform: translateX(150px); /* Move the text to the right */
+    margin: 50px 0 175px 0;
 }
 
 .intro-header {
@@ -57,16 +34,12 @@
 }
 
 .headshot-wrapper {
-    position: absolute;
-    left: 0;
     width: 390px;
     height: 410px;
-    padding: 50px 50px 50px 100px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    padding: 50px;
 }
 
-.intro-wrapper:hover .headshot-wrapper {
+.intro-wrapper:hover {
     opacity: 1;
 }
 
@@ -105,6 +78,7 @@
 
 @media (max-width: 767px) {
     .intro-wrapper {
+        display: flex;
         flex-direction: column;
         height: auto;
         padding: 20px;
