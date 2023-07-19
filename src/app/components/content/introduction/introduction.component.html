@@ -9,7 +9,10 @@
 </div>
 <div class="technical-skills-wrapper">
   <div class="intro-header">TECHNICAL SKILLS</div>
-  <ul class="technical-skills">
-    <li *ngFor="let skill of technicalSkills" class="skill">{{ skill }}</li>
-  </ul>
+  <div class="technical-skills">
+    <div *ngFor="let skill of technicalSkills" class="technical-skill">
+      <div class="technical-skill-name">{{ skill.name }}</div>
+      <img class="technical-skill-icon" [src]="skill.iconPath">
+    </div>
+  </div>
 </div>

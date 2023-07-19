@@ -61,19 +61,31 @@
 }
 
 .technical-skills {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .technical-skill {
+    width: calc(100% / 7);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media (max-width: 950px) {
+      width: calc(100% / 5);
+    }
+
+    @media (max-width: 767px) {
+      width: calc(100% / 3);
+    }
+  }
 }
 
-.skill {
-    width: 100%;
-    margin: 0 5px;
-    padding: 8px 12px;
-    text-align: center;
+.technical-skill-icon {
+    width: auto;
+    height: 60px;
+    margin-top: 20px;
+    filter: drop-shadow(1px 4px 3px rgb(63, 63, 63));
 }
 
 @media (max-width: 767px) {
