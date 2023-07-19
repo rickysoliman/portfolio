@@ -1,6 +1,6 @@
 import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { projects, workExperience } from './experience.model';
+import { projects, workExperience } from './experience.constants';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
