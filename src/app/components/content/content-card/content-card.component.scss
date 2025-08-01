@@ -1,67 +1,62 @@
 .content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+  height: fit-content !important;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: "Roboto Mono", monospace;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.click {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #8fa902;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.click:hover {
+  background-color: #6c7d01;
+}
+
+@media (max-width: 767px) {
+  .content-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65vw;
-    height: fit-content !important;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 30px;
-    font-family: 'Roboto Mono', monospace;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    font-size: 2.5em;
     border: none;
     box-shadow: none;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    position: relative;
-    margin: 20px 0;
-    color: white;
-    text-decoration: none;
-}
-.content-card:hover {
-    box-shadow: 5px 5px 20px #000000;
-    transform: scale(1.02);
-}
+    transform: none;
+    margin: 10px 0;
+  }
 
-.click {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-    background-color: #8fa902;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  .content-card:hover {
+    box-shadow: none;
+    transform: none;
+  }
 }
-
-.click:hover {
-    background-color: #6c7d01;
-}
-
-@media (max-width: 767px) {
-    .content-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: auto;
-        padding: 20px;
-        font-size: 2.5em;
-        border: none;
-        box-shadow: none;
-        transform: none;
-        margin: 10px 0;
-    }
-
-    .content-card:hover {
-        box-shadow: none;
-        transform: none;
-    }
-}
-
