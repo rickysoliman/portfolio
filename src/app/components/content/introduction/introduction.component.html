@@ -1,10 +1,10 @@
 <div class="intro-wrapper">
   <div class="headshot-wrapper">
-    <img class="headshot" src="../../../../assets/ricky-and-mickie.jpg">
+    <img class="headshot" src="assets/ricky-and-mickie.jpg" />
   </div>
   <div class="intro-text">
-      <div class="intro-header">{{ introText.header }}</div>
-      <p class="intro-paragraph">{{ introText.paragraph }}</p>
+    <div class="intro-header">{{ introText.header }}</div>
+    <p class="intro-paragraph">{{ introText.paragraph }}</p>
   </div>
 </div>
 <div class="technical-skills-wrapper">
@@ -12,7 +12,7 @@
   <div class="technical-skills">
     <div *ngFor="let skill of technicalSkills" class="technical-skill">
       <div class="technical-skill-name">{{ skill.name }}</div>
-      <img class="technical-skill-icon" [src]="skill.iconPath">
+      <img class="technical-skill-icon" [src]="skill.iconPath" />
     </div>
   </div>
 </div>
