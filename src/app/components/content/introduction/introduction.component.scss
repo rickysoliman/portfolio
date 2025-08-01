@@ -1,63 +1,63 @@
 .intro-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 90vw;
-    height: 348px;
-    background-color: transparent;
-    border-radius: 10px;
-    font-family: "Roboto Mono", monospace;
-    transition: background-color 0.75s ease, transform 0.75s ease;
-    border: 4px solid transparent;
-    box-shadow: none;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    position: relative;
-    margin: 50px 0 175px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 348px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: "Roboto Mono", monospace;
+  transition: background-color 0.75s ease, transform 0.75s ease;
+  border: 4px solid transparent;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  margin: 50px 0 300px 0;
 }
 
 .intro-header {
-    font-size: 1.6rem;
-    padding-bottom: 27px;
+  font-size: 1.6rem;
+  padding-bottom: 27px;
 }
 
 .intro-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 65%;
-    max-width: 300px;
-    font-size: 1.15rem;
-    transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  max-width: 300px;
+  font-size: 1.15rem;
+  transition: transform 0.3s ease;
 }
 
 .headshot-wrapper {
-    width: 390px;
-    height: 410px;
-    padding: 50px;
+  width: 390px;
+  height: 410px;
+  padding: 50px;
 }
 
 .intro-wrapper:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .headshot {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 7px;
-    opacity: 1;
-    max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  opacity: 1;
+  max-width: 100%;
 }
 
 .technical-skills-wrapper {
-    font-family: "Roboto Mono", monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .technical-skills {
@@ -82,63 +82,63 @@
 }
 
 .technical-skill-icon {
-    width: auto;
-    height: 60px;
-    margin-top: 20px;
-    filter: drop-shadow(1px 4px 3px rgb(63, 63, 63));
+  width: auto;
+  height: 60px;
+  margin-top: 20px;
+  filter: drop-shadow(1px 4px 3px rgb(63, 63, 63));
 }
 
 @media (max-width: 767px) {
-    .intro-wrapper {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        margin: 50px 0;
-        border: none;
-        box-shadow: none;
-    }
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 50px 0;
+    border: none;
+    box-shadow: none;
+  }
 
-    .intro-text {
-        width: 100%;
-        font-size: 1.25rem;
-        text-align: center;
-    }
+  .intro-text {
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+  }
 
-    .headshot-wrapper {
-        position: static;
-        width: 188px;
-        height: 188px;
-        padding: 0;
-        margin: 20px 0;
-        opacity: 1;
-    }
+  .headshot-wrapper {
+    position: static;
+    width: 188px;
+    height: 188px;
+    padding: 0;
+    margin: 20px 0;
+    opacity: 1;
+  }
 
-    .headshot {
-        border-radius: 5px;
-    }
+  .headshot {
+    border-radius: 5px;
+  }
 
-    .skill {
-        text-shadow: none;
-    }
+  .skill {
+    text-shadow: none;
+  }
 
-    .intro-wrapper:hover::before {
-        opacity: 0; /* Hide the image on hover */
-    }
+  .intro-wrapper:hover::before {
+    opacity: 0; /* Hide the image on hover */
+  }
 
-    .intro-wrapper::before {
-        display: none; /* Hide the image */
-    }
+  .intro-wrapper::before {
+    display: none; /* Hide the image */
+  }
 
-    /* Disable hover styles */
-    .intro-wrapper:hover,
-    .intro-wrapper:hover::before,
-    .intro-wrapper:hover .intro-text,
-    .intro-wrapper:hover .headshot-wrapper {
-        background-color: transparent;
-        box-shadow: none;
-        opacity: 1;
-        transform: none;
-        background-image: none;
-    }
+  /* Disable hover styles */
+  .intro-wrapper:hover,
+  .intro-wrapper:hover::before,
+  .intro-wrapper:hover .intro-text,
+  .intro-wrapper:hover .headshot-wrapper {
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+    transform: none;
+    background-image: none;
+  }
 }
