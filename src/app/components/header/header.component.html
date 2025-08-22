@@ -1,18 +1,25 @@
 <mat-toolbar role="heading" id="header-toolbar">
-    <div class="logo-wrapper">
-      <img id="header-logo" src="assets/logo.png" alt="headshot" />
-    </div>
-    <div class="header-title">
-        <h1 id="header-name">Ricky Marasigan</h1>
-        <h3 id="header-subtitle">Frontend Web Developer</h3>
-    </div>
-    <div id="header-icon-links">
-          <a
-            *ngFor="let link of iconLinks"
-            [href]="link.url"
-            [class]="link.class + ' icon-link'"
-            target="_blank"
-          ></a>
-        <a class="contact icon-link" href="mailto:rickysoliman@gmail.com" target="_blank">Contact</a>
-    </div>
+  <div class="headshot-wrapper">
+    <img
+      id="header-headshot"
+      src="assets/ricky-and-mickie.jpg"
+      alt="headshot"
+    />
+  </div>
+
+  <div id="header-icon-links">
+    <a
+      *ngFor="let link of iconLinks"
+      [href]="link.url"
+      class="iconLink"
+      target="_blank"
+      >{{ link.name }}</a
+    >
+    <!-- <a
+      class="contact icon-link"
+      href="mailto:rickysoliman@gmail.com"
+      target="_blank"
+      >Contact</a
+    > -->
+  </div>
 </mat-toolbar>

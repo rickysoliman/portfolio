@@ -1,47 +1,135 @@
+// 1. Global reset
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+// 2. Theme variables
+:root {
+  --bg-base: #f8f9fb; // main page background (soft off-white)
+  --bg-vignette: rgba(0, 0, 0, 0.05);
+
+  --text-primary: #2b2b2b;
+  --text-muted: #6d6d6d;
+  --text-on-purple: #ffffff;
+
+  // Purple/Violet accents
+  --accent-purple: #7c3aed; // base
+  --accent-purple-hover: #6d28d9; // hover
+  --accent-purple-border: #5b21b6; // focused input underline
+  --accent-purple-shadow: rgba(
+    124,
+    58,
+    237,
+    0.28
+  ); // (kept for future use; not applied)
+
+  // Inputs & cards
+  --input-bg: #f1f5f9; // slightly darker than page bg for contrast
+  --input-border: #d1d5db;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+}
+
+// 3. Body + background vignette effect
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  background-color: #111827;
-  color: #f3f4f6;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
   padding: 1rem;
   background-attachment: fixed;
-  margin: 0;
+  position: relative;
+  overflow-x: hidden;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 55%,
+    var(--bg-vignette) 100%
+  );
+  z-index: 0;
+}
+
+// 4. Full height
 html,
 body {
   width: 100%;
   height: 100%;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+// Utility (optional)
+.text-muted {
+  color: var(--text-muted);
 }
 
+// 5. Input styling (non-jumpy underline, no shadow)
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--input-bg); // distinct from body bg
+  border: none;
+  border-bottom: 4px solid transparent; // reserve space to avoid layout shift
+  border-radius: 0.5rem; // rounded top corners
+  transition: border-color 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent-purple-border);
+}
+
+// 6. Links
 a {
-  color: #00d34a;
+  color: var(--accent-purple);
+  text-decoration: none;
 }
 a:hover {
+  color: var(--accent-purple-hover);
   text-decoration: underline;
 }
 a:visited {
-  color: #007829;
+  color: var(--accent-purple-border);
 }
 
+// 7. Buttons
+button {
+  background-color: var(--accent-purple);
+  color: var(--text-on-purple);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--accent-purple-hover);
+}
+
+// 8. Card helper (optional)
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+// 9. Font Awesome (unchanged)
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
