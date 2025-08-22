@@ -2,24 +2,24 @@
   <div class="headshot-wrapper">
     <img
       id="header-headshot"
-      src="assets/ricky-and-mickie.jpg"
-      alt="headshot"
+      src="assets/cartoon-ricky-face.jpg"
+      alt="cartoon headshot"
     />
   </div>
 
   <div id="header-icon-links">
     <a
       *ngFor="let link of iconLinks"
+      class="header-icon-link"
       [href]="link.url"
-      class="iconLink"
       target="_blank"
       >{{ link.name }}</a
     >
-    <!-- <a
-      class="contact icon-link"
+    <a
       href="mailto:rickysoliman@gmail.com"
+      class="header-icon-link"
       target="_blank"
       >Contact</a
-    > -->
+    >
   </div>
 </mat-toolbar>

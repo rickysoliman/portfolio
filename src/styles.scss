@@ -7,26 +7,21 @@
 
 // 2. Theme variables
 :root {
-  --bg-base: #f8f9fb; // main page background (soft off-white)
+  --bg-base: #f8f9fb;
   --bg-vignette: rgba(0, 0, 0, 0.05);
 
   --text-primary: #2b2b2b;
   --text-muted: #6d6d6d;
   --text-on-purple: #ffffff;
 
-  // Purple/Violet accents
-  --accent-purple: #7c3aed; // base
-  --accent-purple-hover: #6d28d9; // hover
-  --accent-purple-border: #5b21b6; // focused input underline
-  --accent-purple-shadow: rgba(
-    124,
-    58,
-    237,
-    0.28
-  ); // (kept for future use; not applied)
+  // Purple accents
+  --accent-purple: #5021a2; // base
+  --accent-purple-hover: #3f1a7f; // hover
+  --accent-purple-border: #2f145f; // focus border
+  --accent-purple-visited: #6a4cad; // visited link
+  --accent-purple-shadow: rgba(80, 33, 162, 0.28);
 
-  // Inputs & cards
-  --input-bg: #f1f5f9; // slightly darker than page bg for contrast
+  --input-bg: #f1f5f9;
   --input-border: #d1d5db;
   --card-bg: #ffffff;
   --card-border: #e5e7eb;
@@ -38,7 +33,6 @@ body {
   line-height: 1.6;
   background-color: var(--bg-base);
   color: var(--text-primary);
-  padding: 1rem;
   background-attachment: fixed;
   position: relative;
   overflow-x: hidden;
@@ -121,7 +115,7 @@ button:hover {
   background-color: var(--accent-purple-hover);
 }
 
-// 8. Card helper (optional)
+// 8. Card helper
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -129,7 +123,7 @@ button:hover {
   padding: 1rem;
 }
 
-// 9. Font Awesome (unchanged)
+// 9. Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
