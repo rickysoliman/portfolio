@@ -1,5 +1,6 @@
 .intro-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
@@ -13,7 +14,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: relative;
-  margin: 50px 0 300px 0;
+  margin: 50px 0 35rem 0;
 }
 
 .intro-header {
@@ -32,21 +33,48 @@
   transition: transform 0.3s ease;
 }
 
-.headshot-wrapper {
-  width: 390px;
-  height: 410px;
+.hero-title-wrapper {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-title {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 6rem;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cartoon-and-text-wrapper {
+  width: 100vw;
+  height: auto;
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-wrapper:hover {
   opacity: 1;
 }
 
-.headshot {
-  width: 100%;
-  height: 100%;
+.cartoon {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
-  border-radius: 7px;
+  border-radius: 50%;
   opacity: 1;
   max-width: 100%;
 }
@@ -137,7 +165,7 @@
     text-align: center;
   }
 
-  .headshot-wrapper {
+  .cartoon-and-text-wrapper {
     position: static;
     width: 188px;
     height: 188px;
@@ -146,7 +174,7 @@
     opacity: 1;
   }
 
-  .headshot {
+  .cartoon {
     border-radius: 5px;
   }
 
@@ -166,7 +194,7 @@
   .intro-wrapper:hover,
   .intro-wrapper:hover::before,
   .intro-wrapper:hover .intro-text,
-  .intro-wrapper:hover .headshot-wrapper {
+  .intro-wrapper:hover .cartoon-and-text-wrapper {
     background-color: transparent;
     box-shadow: none;
     opacity: 1;

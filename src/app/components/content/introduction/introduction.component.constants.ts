@@ -1,6 +1,6 @@
 export const introText = {
   header: `Hi!`,
-  paragraph: `I'm a software engineer based in the Washington DMV Metro area and I love to build things for the web. Check out some things I've built and feel free to reach out!`,
+  paragraph: `I’m a software engineer in the Washington, D.C. metro area and I love bringing ideas to life on the web. Explore my work and reach out anytime!`,
 };
 
 type TechnicalSkill = {
