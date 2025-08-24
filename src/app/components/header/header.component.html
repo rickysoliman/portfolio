@@ -7,18 +7,15 @@
     />
   </div>
 
-  <div id="header-icon-links">
+  <div id="header-links">
     <a
       *ngFor="let link of iconLinks"
-      class="header-icon-link"
+      class="header-link"
       [href]="link.url"
       target="_blank"
       >{{ link.name }}</a
     >
-    <a
-      href="mailto:rickysoliman@gmail.com"
-      class="header-icon-link"
-      target="_blank"
+    <a href="mailto:rickysoliman@gmail.com" class="header-link" target="_blank"
       >Contact</a
     >
   </div>
