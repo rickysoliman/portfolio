@@ -3,11 +3,11 @@
 
   <form
     class="contact-form"
+    [formGroup]="contactFormGroup"
     name="contact"
     method="POST"
     netlify
     netlify-honeypot="bot-field"
-    hidden-input
   >
     <!-- Hidden Netlify form field -->
     <div class="input-wrapper">
@@ -19,16 +19,34 @@
 
     <label for="name">Name</label>
     <div class="input-wrapper">
-      <input type="text" id="name" name="name" required />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        formControlName="name"
+        required
+      />
     </div>
 
     <label for="email">Email</label>
     <div class="input-wrapper">
-      <input type="email" id="email" name="email" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        formControlName="email"
+        required
+      />
     </div>
 
     <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+    <textarea
+      id="message"
+      name="message"
+      rows="6"
+      formControlName="message"
+      required
+    ></textarea>
 
     <button type="submit">Send Message</button>
   </form>

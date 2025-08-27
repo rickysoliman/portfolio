@@ -28,6 +28,7 @@ import { IntroductionComponent } from './components/content/introduction/introdu
 import { MatButtonModule } from '@angular/material/button';
 import { ProjectComponent } from './components/content/project/project.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     MdbTooltipModule,
     MdbValidationModule,
     MatButtonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
