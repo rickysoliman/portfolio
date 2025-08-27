@@ -29,14 +29,17 @@
   margin-top: 1.5rem;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--accent-purple);
+  color: var(--bg-base);
   text-decoration: none;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 0.5rem;
-  transition: border 0.25s ease;
+  background-color: var(--accent-purple);
+  transition: background-color 0.25s ease, color 0.25s ease,
+    transform 0.25s ease;
 
   &:hover {
-    border: 1px solid var(--accent-purple);
+    background-color: var(--accent-purple-hover);
+    color: var(--text-on-purple);
+    transform: translateY(-2px);
   }
 }
