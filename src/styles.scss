@@ -17,7 +17,7 @@
   // Purple accents
   --accent-purple: #5021a2; // base
   --accent-purple-hover: #7539dc; // hover
-  --accent-purple-border: #2f145f; // focus border
+  --accent-purple-border: #7539dc; // focus border
   --accent-purple-shadow: rgba(80, 33, 162, 0.28);
 
   --input-bg: #f1f5f9;
@@ -100,7 +100,7 @@ textarea {
   color: var(--text-primary);
   background-color: var(--input-bg); // distinct from body bg
   border: none;
-  border-bottom: 4px solid transparent; // reserve space to avoid layout shift
+  border-bottom: 5px solid transparent; // reserve space to avoid layout shift
   border-radius: 0.5rem; // rounded top corners
   transition: border-color 0.25s ease;
 }

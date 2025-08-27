@@ -27,6 +27,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { IntroductionComponent } from './components/content/introduction/introduction.component';
 import { MatButtonModule } from '@angular/material/button';
 import { ProjectComponent } from './components/content/project/project.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ProjectComponent } from './components/content/project/project.component
     IntroductionComponent,
     ContentCardComponent,
     ProjectComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +64,6 @@ import { ProjectComponent } from './components/content/project/project.component
     MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
