@@ -14,4 +14,24 @@
       </app-content-card>
     </ng-container>
   </div>
+
+  <h1 class="section-header">WORK EXPERIENCE</h1>
+
+  <div class="work-experience-wrapper">
+    <ng-container *ngFor="let job of workExperience">
+      <div class="experience-card">
+        <img
+          class="company-logo"
+          [src]="job.logoPath"
+          [alt]="job.company + ' logo'"
+        />
+        <div class="experience-text">
+          <h2 class="job-title">{{ job.title }}</h2>
+          <h3 class="company-name">{{ job.company }}</h3>
+          <p class="job-date">{{ job.date }}</p>
+          <p class="job-description">{{ job.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
 </div>

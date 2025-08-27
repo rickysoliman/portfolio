@@ -32,55 +32,74 @@
   flex-direction: column;
 }
 
-.work-experience {
-  width: 75%;
-}
-
 .work-experience-wrapper {
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-shadow: none;
-}
-
-.work-experience-header {
   display: flex;
   flex-direction: column;
-  flex-direction: start;
-  margin-bottom: 10px;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.work-experience-logo {
-  width: 50px;
-  height: 50px;
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: min(100%, 800px);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--card-border, #ccc);
+  background-color: var(--card-bg, #fff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(80, 33, 162, 0.15);
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  margin-right: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-border, #d1d5db);
+  background-color: white;
 }
 
-.work-experience-company {
-  font-size: 20px;
-  color: #333;
-  margin: 0;
-}
+.experience-text {
+  flex: 1;
 
-.work-experience-date {
-  font-size: 14px;
-  color: #777;
-  margin: 0;
-}
+  .job-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-purple);
+    margin-bottom: 0.25rem;
+  }
 
-.work-experience-title {
-  font-size: 18px;
-  color: #333;
-  margin: 10px 0;
-}
+  .company-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
 
-.work-experience-description {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
+  .job-date {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0.25rem 0 1rem;
+  }
+
+  .job-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 .conclusion {
