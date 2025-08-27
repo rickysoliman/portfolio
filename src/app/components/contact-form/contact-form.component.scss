@@ -33,6 +33,11 @@
       background-color: var(--accent-purple-hover);
     }
   }
+
+  .error {
+    color: var(--accent-error-border);
+    font-size: 1rem;
+  }
 }
 
 .hidden {
