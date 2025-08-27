@@ -161,8 +161,9 @@ button:hover {
   );
   border-radius: 50%;
   z-index: 0;
-  transition: transform 0.01s ease-out;
-  will-change: transform;
+  transition: transform 0.01s ease-out, opacity 0.3s ease;
+  opacity: 1;
+  will-change: transform opacity;
 }
 
 // Font Awesome
