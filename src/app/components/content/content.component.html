@@ -1,53 +1,17 @@
 <div class="content-wrapper">
   <app-introduction></app-introduction>
 
-  <h1 class="content-header">PROJECTS</h1>
-  <div class="projects" *ngFor="let project of projects">
-    <ng-template #projectTpl>
-      <app-project
-        [name]="project.name"
-        [description]="project.description"
-        [gifPath]="project.gifPath"
-      ></app-project>
-    </ng-template>
+  <h1 class="section-header">PROJECTS</h1>
 
-    <app-content-card
-      [url]="project.url"
-      [contentTemplate]="projectTpl"
-      class="content-header"
-    ></app-content-card>
-  </div>
-
-  <h1 class="content-header">WORK EXPERIENCE</h1>
-  <div
-    class="work-experience"
-    *ngFor="let work of workExperience"
-    class="content-header"
-  >
-    <div class="work-experience-wrapper">
-      <div class="work-experience-header">
-        <img class="work-experience-logo" [src]="work.logoPath" />
-        <h2 class="work-experience-company">{{ work.company }}</h2>
-        <p class="work-experience-date">{{ work.date }}</p>
-      </div>
-      <h3 class="work-experience-title">{{ work.title }}</h3>
-      <p class="work-experience-description">{{ work.description }}</p>
-    </div>
-  </div>
-
-  <div class="conclusion">
-    <p>
-      Thanks for exploring my portfolio! I'm always pursuing new projects so
-      make sure to stay tuned for exciting updates. If you're looking for a
-      developer to work with you on your next endeavor, feel free to get in
-      touch!
-    </p>
-    <a
-      class="contact-button"
-      href="mailto:rickysoliman@gmail.com"
-      target="_blank"
-    >
-      <button class="custom-button">Contact</button>
-    </a>
+  <div class="projects">
+    <ng-container *ngFor="let project of projects">
+      <app-content-card [url]="project.url" class="project-card-host">
+        <app-project
+          [name]="project.name"
+          [description]="project.description"
+          [gifPath]="project.gifPath"
+        ></app-project>
+      </app-content-card>
+    </ng-container>
   </div>
 </div>

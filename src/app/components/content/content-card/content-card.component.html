@@ -1,6 +1,15 @@
-<div class="content-card">
-  <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
-  <a *ngIf="url" [href]="url" target="_blank">
-    <button class="click">Click to see it for yourself</button>
-  </a>
+<div class="project-card-wrapper">
+  <div class="project-card">
+    <ng-content></ng-content>
+
+    <a
+      *ngIf="url"
+      class="project-card-cta"
+      [href]="url"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Open ↗
+    </a>
+  </div>
 </div>
