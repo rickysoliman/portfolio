@@ -5,21 +5,10 @@
     name="contact"
     class="contact-form"
     method="POST"
-    netlify
-    netlify-honeypot="bot-field"
     [formGroup]="contactFormGroup"
     (ngSubmit)="onSubmit($event)"
     novalidate
   >
-    <!-- Netlify Hidden Form Name -->
-    <input type="hidden" name="form-name" value="contact" />
-
-    <!-- Honeypot field for bots -->
-    <p class="hidden">
-      <label>Don’t fill this out: <input name="bot-field" /></label>
-    </p>
-
-    <!-- Name -->
     <label for="name" class="required">Name</label>
     <div class="input-wrapper">
       <input
@@ -41,14 +30,12 @@
         Name is required.
       </small>
     </div>
-
-    <!-- Email -->
     <label for="email" class="required">Email</label>
     <div class="input-wrapper">
       <input
-        type="email"
         id="email"
         name="email"
+        type="email"
         formControlName="email"
         required
       />
@@ -67,8 +54,6 @@
         Please enter a valid email address.
       </small>
     </div>
-
-    <!-- Message -->
     <label for="message" class="required">Message</label>
     <div class="input-wrapper">
       <textarea
@@ -90,15 +75,6 @@
         Message is required.
       </small>
     </div>
-
-    <!-- Submit -->
     <button type="submit">Send Message</button>
   </form>
 </section>
-
-<!-- Hidden static form for Netlify build-time detection -->
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-</form>

@@ -19,34 +19,30 @@ export class ContactFormComponent implements OnInit {
 
   onSubmit(event: Event): void {
     event.preventDefault();
-
     this.contactFormGroup.markAllAsTouched();
+    if (this.contactFormGroup.invalid) return;
 
-    if (this.contactFormGroup.invalid) {
-      console.warn('Form is invalid');
-      return;
-    }
+    const data = new URLSearchParams();
+    data.append('name', this.contactFormGroup.get('name')?.value || '');
+    data.append('email', this.contactFormGroup.get('email')?.value || '');
+    data.append('message', this.contactFormGroup.get('message')?.value || '');
 
-    const formData = new FormData();
-    formData.append('form-name', 'contact');
-    formData.append('name', this.contactFormGroup.get('name')?.value || '');
-    formData.append('email', this.contactFormGroup.get('email')?.value || '');
-    formData.append(
-      'message',
-      this.contactFormGroup.get('message')?.value || ''
-    );
-
-    fetch('/', {
+    fetch('https://formspree.io/f/mzzadpgr', {
       method: 'POST',
-      body: formData,
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: data.toString(),
     })
-      .then(() => {
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         alert('Message sent!');
         this.contactFormGroup.reset();
       })
-      .catch((error) => {
-        alert('Something went wrong. Please try again.');
-        console.error('Form submission error:', error);
+      .catch((err) => {
+        console.error('Formspree error:', err);
+        alert('Submission failed. Please try again.');
       });
   }
 }
