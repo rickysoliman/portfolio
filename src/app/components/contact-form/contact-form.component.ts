@@ -7,7 +7,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent implements OnInit {
-  messageSent: boolean = true;
+  messageSent: boolean = false;
   contactFormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
