@@ -1,4 +1,4 @@
-<section class="contact-wrapper">
+<section class="contact-wrapper" *ngIf="!messageSent">
   <h1 class="section-header">Contact Me</h1>
 
   <form
@@ -77,4 +77,13 @@
     </div>
     <button type="submit">Send Message</button>
   </form>
+</section>
+
+<section class="contact-wrapper" *ngIf="messageSent">
+  <div class="thank-you-message">
+    <h1>Message Sent!</h1>
+    <p>
+      Thank you so much for reaching out. I'll get back to you as soon as I can!
+    </p>
+  </div>
 </section>

@@ -7,6 +7,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact-form.component.scss'],
 })
 export class ContactFormComponent implements OnInit {
+  messageSent: boolean = true;
   contactFormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -37,8 +38,7 @@ export class ContactFormComponent implements OnInit {
     })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        alert('Message sent!');
-        this.contactFormGroup.reset();
+        this.messageSent = true;
       })
       .catch((err) => {
         console.error('Formspree error:', err);
