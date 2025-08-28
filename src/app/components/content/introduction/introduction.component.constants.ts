@@ -12,6 +12,7 @@ export const technicalSkills: TechnicalSkill[] = [
   { name: 'JavaScript', iconPath: 'assets/skill-icons/javascript.png' },
   { name: 'TypeScript', iconPath: 'assets/skill-icons/typescript.png' },
   { name: 'HTML', iconPath: 'assets/skill-icons/html.png' },
+  { name: 'CSS', iconPath: 'assets/skill-icons/css.png' },
   { name: 'Angular', iconPath: 'assets/skill-icons/angular.png' },
   { name: 'RxJS', iconPath: 'assets/skill-icons/rxjs.png' },
   { name: 'React', iconPath: 'assets/skill-icons/react.png' },
@@ -22,5 +23,4 @@ export const technicalSkills: TechnicalSkill[] = [
   { name: 'Node.js', iconPath: 'assets/skill-icons/node.png' },
   { name: 'Git', iconPath: 'assets/skill-icons/git.png' },
   { name: 'Postman', iconPath: 'assets/skill-icons/postman.png' },
-  { name: 'Jira', iconPath: 'assets/skill-icons/jira.png' },
 ];
