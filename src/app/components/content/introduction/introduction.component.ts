@@ -4,16 +4,13 @@ import { introText, technicalSkills } from './introduction.component.constants';
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.component.html',
-  styleUrls: ['./introduction.component.scss']
+  styleUrls: ['./introduction.component.scss'],
 })
 export class IntroductionComponent implements OnInit {
-
   introText = introText;
   technicalSkills = technicalSkills;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

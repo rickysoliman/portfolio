@@ -1,5 +1,4 @@
 export const introText = {
-  header: `Hi!`,
   paragraph: `I’m a software engineer in the Washington, D.C. metro area and I love bringing ideas to life on the web. Explore my work and reach out anytime!`,
 };
 
