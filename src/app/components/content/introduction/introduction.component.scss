@@ -15,11 +15,32 @@
   -webkit-backdrop-filter: blur(10px);
   position: relative;
   margin: 50px 0 35rem 0;
+
+  @media (max-width: 768px) {
+    height: auto;
+    margin: 30px 0 20rem 0;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 20px 0 1rem 0;
+    padding: 1rem;
+  }
 }
 
 .intro-header {
   font-size: 1.6rem;
   padding-bottom: 27px;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
 }
 
 .intro-text {
@@ -37,13 +58,31 @@
   width: 75%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 0.95rem;
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    width: 95%;
+  }
 }
 
 .hero-title-wrapper {
   text-align: center;
   margin: 3rem 0 2rem 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 768px) {
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  @media (max-width: 480px) {
+    margin: 1.5rem 0 1rem 0;
+  }
 }
 
 .hero-title {
@@ -52,6 +91,21 @@
   color: var(--accent-purple);
   font-family: "Roboto Mono", monospace;
   margin-bottom: 6rem;
+
+  @media (max-width: 1024px) {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .hero-subtitle {
@@ -62,18 +116,35 @@
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
 .cartoon-and-text-wrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 50px;
   display: flex;
   justify-content: center;
-}
+  align-items: center;
 
-.intro-wrapper:hover {
-  opacity: 1;
+  @media (max-width: 768px) {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
 }
 
 .cartoon {
@@ -82,8 +153,22 @@
   object-fit: cover;
   border-radius: 50%;
   opacity: 1;
-  max-width: 100%;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    width: 75%;
+    height: 75%;
+  }
 }
+
+/* =========================
+   TECHNICAL SKILLS SECTION
+   ========================= */
 
 .technical-skills-wrapper {
   font-family: "Inter", sans-serif;
@@ -99,6 +184,14 @@
     margin-bottom: 2rem;
     color: var(--accent-purple);
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -108,6 +201,16 @@
   justify-content: center;
   gap: 2rem;
   margin: 0 5rem 0 5rem;
+
+  @media (max-width: 1024px) {
+    margin: 0 5rem;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 5rem;
+    gap: 1rem;
+  }
 
   .technical-skill {
     background-color: var(--card-bg);
@@ -145,6 +248,12 @@
       width: 95px;
       height: 120px;
     }
+
+    @media (max-width: 480px) {
+      width: 85px;
+      height: 110px;
+      padding: 1rem 0.5rem;
+    }
   }
 }
 
@@ -156,5 +265,10 @@
 
   .technical-skill:hover & {
     transform: scale(1.15);
+  }
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
   }
 }
