@@ -15,6 +15,12 @@ type WorkExperience = {
 
 export const projects: Project[] = [
   {
+    name: 'Crack the Code',
+    description: `A code-breaking puzzle game built in Angular. Players must deduce a secret 4-digit code by analyzing clues and marking digits as correct, misplaced, or wrong. Each new game generates a random code and a unique set of logical hints, challenging players to think critically and apply deduction skills.`,
+    url: 'https://rickysoliman.github.io/crack-the-code/',
+    gifPath: 'assets/crack-the-code.gif',
+  },
+  {
     name: 'Word Chain',
     description: `An engaging online word game developed in Angular. It leverages the Free Dictionary API to validate words and challenges players to construct a chain of words within a 60-second timeframe. Test your vocabulary and spelling abilities by entering a word that starts with the last letter of the previous word in the chain and strive to build the longest chain possible!`,
     url: 'https://rickysoliman.github.io/word-chain/',
