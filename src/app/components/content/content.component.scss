@@ -50,12 +50,6 @@
   border: 1px solid var(--card-border, #ccc);
   background-color: var(--card-bg, #fff);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(80, 33, 162, 0.15);
-  }
 
   @media (max-width: 767px) {
     flex-direction: column;
