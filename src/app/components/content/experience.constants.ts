@@ -15,6 +15,12 @@ type WorkExperience = {
 
 export const projects: Project[] = [
   {
+    name: 'Poke API Explorer Dashboard',
+    description: `An interactive dashboard designed for Pokémon enthusiasts to explore data from the PokéAPI. This application allows users to search and filter through the Pokémon roster, viewing comprehensive details such as base stats, abilities, and moves. It showcases dynamic data fetching, responsive design, and a clean user interface for visualizing Pokémon statistics.`,
+    url: 'https://rickysoliman.github.io/poke-api-explorer-dashboard/',
+    gifPath: 'assets/pokedex.gif',
+  },
+  {
     name: 'Crack the Code',
     description: `A code-breaking puzzle game built in Angular. Players must deduce a secret 4-digit code by analyzing clues and marking digits as correct, misplaced, or wrong. Each new game generates a random code and a unique set of logical hints, challenging players to think critically and apply deduction skills.`,
     url: 'https://rickysoliman.github.io/crack-the-code/',
@@ -49,7 +55,7 @@ export const workExperience: WorkExperience[] = [
     title: 'Volunteer Frontend Software Engineer',
     date: 'January 2023 – September 2023',
     description: `
-      I’ve been enjoying doing volunteer work for the Disaster Accountability Project very much by contributing to the revamping of their website. I've built several Angular components, including a re-usable and dynamic text input component, and a slick hamburger icon drop-down menu. With a keen eye for quality, I crafted solid unit tests using Jest and conducted thorough end-to-end tests using Cypress. Throughout the process, I also actively participated in code reviews, offering constructive feedback and fostering a friendly and collaborative team environment.
+      I enjoyed doing volunteer work for the Disaster Accountability Project very much by contributing to the revamping of their website. I've built several Angular components, including a re-usable and dynamic text input component, and a slick hamburger icon drop-down menu. With a keen eye for quality, I crafted solid unit tests using Jest and conducted thorough end-to-end tests using Cypress. Throughout the process, I also actively participated in code reviews, offering constructive feedback and fostering a friendly and collaborative team environment.
     `,
     logoPath: 'assets/dap-logo.jpg',
   },
