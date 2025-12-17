@@ -4,16 +4,17 @@ import { logoUrl, iconLinks } from './header.model';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-
   public iconLinks = iconLinks;
   public logoUrl = logoUrl;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  scrollToContact(): void {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   }
-
 }
