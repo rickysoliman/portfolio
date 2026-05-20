@@ -15,6 +15,12 @@ type WorkExperience = {
 
 export const projects: Project[] = [
   {
+    name: 'SmashPad',
+    description: `An interactive, React-based keyboard-smashing application designed to keep toddlers busy and give parents a break! Designed for playful engagement, the application features custom soundboards and real-time keystroke counters, showcasing dynamic state management, audio integration, and a responsive user interface.`,
+    url: 'https://rickysoliman.github.io/smashpad/',
+    gifPath: 'assets/smashpad.gif',
+  },
+  {
     name: 'Poke API Explorer Dashboard',
     description: `An interactive dashboard designed for Pokémon enthusiasts to explore data from the PokéAPI. This application allows users to search and filter through the Pokémon roster, viewing comprehensive details such as base stats, abilities, and moves. It showcases dynamic data fetching, responsive design, and a clean user interface for visualizing Pokémon statistics.`,
     url: 'https://rickysoliman.github.io/poke-api-explorer-dashboard/',
